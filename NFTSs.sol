@@ -9,7 +9,7 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
 
 /// @custom:security-contact armanibadboy@gmail.com
-contract AUBAKIROVARMAN is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeable, OwnableUpgradeable {
+contract AUBAKIROVARMANTECHCULTURE is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeable, OwnableUpgradeable {
     mapping(uint256 => uint256) private itemPrices;
     mapping(uint256 => bool) private itemForSale;
     uint256 private nextItemId;
@@ -27,7 +27,7 @@ contract AUBAKIROVARMAN is Initializable, ERC721Upgradeable, ERC721URIStorageUpg
     }
 
     function initialize() initializer public {
-        __ERC721_init("AUBAKIROVARMANFORTECHCULTURE", "ARMANINFT");
+        __ERC721_init("AUBAKIROVARMANFORTECHCULTURES", "ARMANINFTSD");
         __ERC721URIStorage_init();
         __Ownable_init();
     }
